@@ -6,9 +6,9 @@ lodestone _is_ a physics engine to calculate 3D vector fields at high performanc
 
 ## current architecture
 
-* **lang**: C++17
+* **language**: C++17
 * **math**: eigen
 
 ## inspiration(s)
 
-a magnetic i found stuck to a chair
+a neodymium magnet i found stuck to a chair
