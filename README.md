@@ -7,9 +7,9 @@ lodestone _is_ a physics engine to calculate 3D vector fields at high performanc
 ## current architecture
 
 * **language**: C++17
-* **math**: eigen
-    note: "eigen performs best with compilers based on GCC or LLVM/CLANG" [1]
-    with this information, lodestone will be compiler agnostic with only GCC and CLANG
+* **math**: eigen <br>
+* * **note**: "eigen performs best with compilers based on GCC or LLVM/CLANG" [1]
+* * with this information in mind, lodestone will be compiler agnostic with only GCC and CLANG to maximize performance
 
 ## inspiration(s)
 
