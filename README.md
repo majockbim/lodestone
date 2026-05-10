@@ -1,6 +1,6 @@
 # lodestone
 
-## magnetic physics engine
+## what is it
 
 lodestone _is_ a physics engine to calculate 3D vector fields at high performance
 
@@ -15,6 +15,6 @@ lodestone _is_ a physics engine to calculate 3D vector fields at high performanc
 
 a neodymium magnet i found stuck to a chair
 
-## references
+## reference(s)
 
- [1] (Eigen: A C++ template library for linear algebra)[https://libeigen.gitlab.io/]
+[1] [Eigen: A C++ template library for linear algebra](https://libeigen.gitlab.io/)
