@@ -1,5 +1,5 @@
 # preface
-- lodestone is not opensource
+- lodestone _is not_ opensource
 - this document is for maintaining project consistency
 
 # code style
