@@ -1,0 +1,5 @@
+# compiler generated
+build/
+
+# git related
+.git/

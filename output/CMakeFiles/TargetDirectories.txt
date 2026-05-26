@@ -1,0 +1,3 @@
+C:/Users/pretb/code/lodestone/output/CMakeFiles/lodestone.dir
+C:/Users/pretb/code/lodestone/output/CMakeFiles/ALL_BUILD.dir
+C:/Users/pretb/code/lodestone/output/CMakeFiles/ZERO_CHECK.dir
