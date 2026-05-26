@@ -1,8 +1,10 @@
 #include <iostream>
-#include "../inc/main.h"
+#include "../inc/main.hpp"
 
 int main() {
-    std::cout << "hi" << "\n";
+    GeneralEngine& engine  = GeneralEngine::get();;
+
+    engine.moving_charge();
 
     return 0;
 }
