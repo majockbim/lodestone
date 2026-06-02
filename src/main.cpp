@@ -2,7 +2,7 @@
 #include "../inc/main.hpp"
 
 int main() {
-    GeneralEngine& engine  = GeneralEngine::get();;
+    GeneralEngine& engine = GeneralEngine::get();;
 
     engine.moving_charge();
 
