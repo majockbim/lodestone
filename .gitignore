@@ -3,3 +3,17 @@ build/
 
 # git related
 .git/
+
+# nvim LSP generated
+ALL_BUILD.vcxproj
+ALL_BUILD.vcxproj.filters
+CMakeCache.txt
+Makefile
+ZERO_CHECK.vcxproj
+ZERO_CHECK.vcxproj.filters
+cmake_install.cmake
+compile_commands.json
+lodestone.sln
+lodestone.vcxproj
+lodestone.vcxproj.filters
+CMakeFiles/
