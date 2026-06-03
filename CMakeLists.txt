@@ -10,5 +10,5 @@ add_executable(lodestone
 )
 
 target_include_directories(lodestone PRIVATE 
-    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/inc
 )

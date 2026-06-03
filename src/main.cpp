@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../inc/main.hpp"
+#include "main.hpp"
 
 int main() {
     GeneralEngine& engine = GeneralEngine::get();;

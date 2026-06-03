@@ -1,5 +1,6 @@
 # compiler generated
 build/
+output/
 
 # git related
 .git/
