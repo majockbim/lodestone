@@ -11,7 +11,7 @@
 class Vec3 {
 public:
     Vec3(const Vec3&) = delete;
-    Vec3& operator=const Vec3&) = delete;
+    Vec3& operator=(const Vec3&) = delete;
 
     Vec3(Vec3&&) = delete;
     Vec3& operator=(Vec3&&) = delete;
