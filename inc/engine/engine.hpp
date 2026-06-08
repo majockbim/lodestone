@@ -8,28 +8,17 @@
 
 #define PI 3.14159265358979323846
 
-class GeneralEngine {
+class Vec3 {
 public:
-    GeneralEngine(const GeneralEngine&) = delete;
-    GeneralEngine& operator=(const GeneralEngine&) = delete;
+    Vec3(const Vec3&) = delete;
+    Vec3& operator=const Vec3&) = delete;
 
-    GeneralEngine(GeneralEngine&&) = delete;
-    GeneralEngine& operator=(GeneralEngine&&) = delete;
+    Vec3(Vec3&&) = delete;
+    Vec3& operator=(Vec3&&) = delete;
 
-    static GeneralEngine& get();
+    static Vec3& get();
 
-    void moving_charge();
-    
 private:
-    GeneralEngine() {}
-    ~GeneralEngine();
-
-    int q;
-    int v;
-    int B;
-    uint16_t theta;
-
-    double F;
+    Vec3() {}
+    ~Vec3();
 };
-
-// gemini --resume '8b8ea117-1932-4262-9abd-4ffe379d982d'

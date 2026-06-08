@@ -2,9 +2,7 @@
 #include "main.hpp"
 
 int main() {
-    GeneralEngine& engine = GeneralEngine::get();;
-
-    engine.moving_charge();
+    Vec3& engine = Vec3::get();;
 
     return 0;
 }
