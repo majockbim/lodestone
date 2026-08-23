@@ -14,7 +14,32 @@ struct Vec3 {
     double y;
     double z;
 
-    Vec3 operator-(const Vec3& dipole) const {
-        return Vec3{x - dipole.x, y - dipole.y, z - dipole.z};
+    Vec3 operator-(const Vec3& vec) const {
+        return Vec3{x - vec.x, y - vec.y, z - vec.z};
     }
+
+    Vec3 operator/(double scalar) const {
+        return Vec3{x / scalar, y / scalar, z / scalar}; 
+    }
+
+    double magnitude() const {
+        return std::sqrt(x * x + y * y + z * z);
+    }
+
+    Vec3 operator*(double k) const {
+        return Vec3{x * k, y * k, z * k};
+    }
+
+    double dot(const Vec3& vec) const {
+        return double{x * vec.x +
+                      y * vec.y +
+                      z * vec.z
+        };
+    }
+
 };
+
+// allows for x * vec, since other func supports only vec * x
+inline Vec3 operator*(double scalar, const Vec3& vec) {
+    return vec * scalar;
+}
