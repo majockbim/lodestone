@@ -37,7 +37,11 @@ struct Vec3 {
         };
     }
 
+    Vec3 compute_dipole_field(const Vec3& r_obs, const Vec3& r_dipole);
+
 };
+
+inline constexpr Vec3 zero_vec{0.0, 0.0, 0.0};
 
 // allows for x * vec, since other func supports only vec * x
 inline Vec3 operator*(double scalar, const Vec3& vec) {
