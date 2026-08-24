@@ -36,10 +36,9 @@ struct Vec3 {
                       z * vec.z
         };
     }
-
-    Vec3 compute_dipole_field(const Vec3& r_obs, const Vec3& r_dipole);
-
 };
+
+Vec3 compute_dipole_field(const Vec3& r_obs, const Vec3& r_dipole, const Vec3& m);
 
 inline constexpr Vec3 zero_vec{0.0, 0.0, 0.0};
 
