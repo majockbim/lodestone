@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(lodestone 
     src/main.cpp
-    src/engine/engine.cpp
+    src/simulator/simulator.cpp
 )
 
 target_include_directories(lodestone PRIVATE 
