@@ -4,12 +4,21 @@
 
 lodestone _is_ a physics engine to calculate 3D vector fields at high performance
 
+## physics
+
+currently calculating magnetic field vector fields due to a single magnetic dipole.
+
+the core equation used is:
+```
+B = (μ₀/4π) · (1/r³) · [3(m·r̂)r̂ - m]
+```
+
 ## current architecture
 
 * **language**: C++17
 * **math**: eigen <br>
-* * **note**: "eigen performs best with compilers based on GCC or LLVM/CLANG" [1]
-* * with this information in mind, lodestone will be compiler agnostic with only GCC and CLANG to maximize performance
+  * **note**: "eigen performs best with compilers based on GCC or LLVM/CLANG" [1]
+  * with this information in mind, lodestone will be compiler agnostic with only GCC and CLANG to maximize performance
 
 ## inspiration(s)
 
@@ -17,14 +26,20 @@ a neodymium magnet i found stuck to a chair
 
 # build
 ```bash
-
 cmake -S . -B build
 cmake --build build
-
 ```
 
+run the engine:
 ```bash
 .\build\Debug\lodestone.exe
+```
+
+run the tests:
+```bash
+cmake --build build --target lodestone_tests
+cd build
+ctest --output-on-failure
 ```
 
 ## reference(s)
