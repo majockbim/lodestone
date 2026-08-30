@@ -31,6 +31,23 @@ target_link_libraries(lodestone_tests GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(lodestone_tests)
 
+#[[
+auto fetch GLFW (https://github.com/glfw/glfw)
+only require the library itself, exclude other GLFW clutter
+]]
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CAHCE BOOL "" FORCE)
+
+FetchContent_Declare(
+    glfw
+    GIT_REPOSITORY https://github.com/glfw/glfw.git
+    GIT_TAG 3.5
+)
+FetchContent_MakeAvailable(glfw)
+
 target_include_directories(lodestone PRIVATE 
     ${CMAKE_SOURCE_DIR}/inc
 )
+
+target_link_libraries(lodestone PRIVATE glfw)
