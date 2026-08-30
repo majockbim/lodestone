@@ -24,6 +24,7 @@ enable_testing()
 add_executable(lodestone_tests
     tests/test_simulator.cpp
     src/simulator/simulator.cpp
+    src/glad.c
 )
 target_include_directories(lodestone_tests PRIVATE ${CMAKE_SOURCE_DIR}/inc)
 target_link_libraries(lodestone_tests GTest::gtest_main)
