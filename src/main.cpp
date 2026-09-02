@@ -24,6 +24,8 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     GLFWwindow* window = glfwCreateWindow(1280, 720, "lodestone", NULL, NULL);
+    glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     // load the address of the OpenGL function pointers (OS-specific)
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
