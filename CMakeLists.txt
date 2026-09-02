@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(lodestone 
     src/main.cpp
     src/simulator/simulator.cpp
+    src/glad.c
 )
 
 # auto fetch GTest
@@ -24,7 +25,6 @@ enable_testing()
 add_executable(lodestone_tests
     tests/test_simulator.cpp
     src/simulator/simulator.cpp
-    src/glad.c
 )
 target_include_directories(lodestone_tests PRIVATE ${CMAKE_SOURCE_DIR}/inc)
 target_link_libraries(lodestone_tests GTest::gtest_main)
@@ -43,7 +43,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE  BOOL "" FORCE)
 FetchContent_Declare(
     glfw
     GIT_REPOSITORY https://github.com/glfw/glfw.git
-    GIT_TAG 3.5
+    GIT_TAG 3.4
 )
 
 # download and expose targets
