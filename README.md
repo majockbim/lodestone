@@ -49,3 +49,7 @@ ctest --output-on-failure
 _books that have influence the modularity of lodestone_ <br>
 [2] [C++17 In Detail - _Bartłomiej Filipek_](https://www.cppindetail.com/) <br>
 [3] [Effective Modern C++ - _Scott Meyers_](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/)
+
+_tutorials that have been helpful_ <br>
+[4] [Learn OpenGL: Creating a window](https://learnopengl.com/Getting-started/Creating-a-window)
+[5] [GLFW: Getting started](https://www.glfw.org/docs/latest/window_guide.html)
