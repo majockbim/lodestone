@@ -25,11 +25,18 @@ B = (μ₀/4π) · (1/r³) · [3(m·r̂)r̂ - m]
 a neodymium magnet i found stuck to a chair
 
 # build
+
+default compilation (uses your system's default compiler):
 ```bash
 cmake -S . -B build
 cmake --build build
 ```
 
+force compilation with g++ (gcc):
+```bash
+cmake -G "MinGW Makefiles" -S . -B build
+cmake --build build
+```
 run the engine:
 ```bash
 .\build\Debug\lodestone.exe
