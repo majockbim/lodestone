@@ -1,7 +1,5 @@
 #pragma once
 
-#include "../main.hpp"
-
 #include <chrono>
 #include <thread>
 #include <cmath>
