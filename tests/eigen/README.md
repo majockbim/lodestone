@@ -4,24 +4,28 @@ A small standalone test to check that the system-installed Eigen headers compile
 and basic vector operations work. Requires `g++` and Eigen installed at
 `/usr/include/eigen3`.
 
+The `eigen_test.cpp` file is the C++ version. The original `eigen_test.c` is kept
+for reference; its contents were already C++, compiled using `-x c++`.
+
 ## Compile and run
 
 From the project root (`/home/mj/code/lodestone`):
 
 ```bash
-g++ -x c++ -std=c++17 -Wall -Wextra \
+mkdir -p build
+g++ -std=c++17 -Wall -Wextra \
   -I /usr/include/eigen3 \
-  tests/eigen/eigen_test.c -o /tmp/lodestone-eigen-test
+  tests/eigen/eigen_test.cpp -o build/eigen_test
 
-/tmp/lodestone-eigen-test
+./build/eigen_test
 ```
 
-- `-x c++` compiles the `.c` file as C++ because Eigen is a C++ library.
+- The `.cpp` extension selects C++ automatically; `-x c++` is unnecessary.
 - `-std=c++17` selects the project's C++ standard.
 - `-Wall -Wextra` enables compiler warnings.
 - `-I /usr/include/eigen3` uses the system Eigen headers rather than the bundled
   copy in `inc/Eigen/`.
-- `-o` writes the executable to `/tmp/lodestone-eigen-test`.
+- `-o` writes the executable to `build/eigen_test`, inside the Git-ignored build folder.
 
 ## What the test does
 
